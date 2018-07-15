@@ -2122,5 +2122,5 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  (temp/count).to_f.floor
+  (temp.to_f/count)
 end
