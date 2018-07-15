@@ -2059,7 +2059,6 @@ def get_first_name_of_season_winner(data, season_num)
   # code here
   temp = ""
   seasons.each do |num, person|
-      puts 
      if season_num.to_s == num.to_s
           person.each do |stats,deets|
             if stats[:status] == "Winner"
