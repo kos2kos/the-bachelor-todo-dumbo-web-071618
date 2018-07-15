@@ -19,7 +19,7 @@ def get_contestant_name(data, occupation)
     data.each do |num, person|
         person.each do |stats|
             if stats[:occupation] == occupation
-                temp = stats[:name] 
+                temp = temp +  stats[:name] + " "
             end
         end
     end
