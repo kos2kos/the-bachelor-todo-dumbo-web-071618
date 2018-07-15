@@ -42,14 +42,14 @@ end
 
 def get_occupation(data, hometown)
   # code here
-  temp = ""
+  temp = nil
   data.each do |num, person|
-    peperson.each do |stats|
-      if stats[:hometown] == hometown
-        temp = stats[:name].to_s
-      break
+    person.each do |stats|
+      if stats[:hometown] == hometown && temp == nil
+            temp = stats[:name].to_s
+        end
     end
-  end
+  
 end
 temp
 end
