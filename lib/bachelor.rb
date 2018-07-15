@@ -57,8 +57,14 @@ end
 def get_average_age_for_season(data, season)
   # code here
   temp = 0
+  count = 0
   data.each do |num, person|
     if num.to_s == season.to_s
       person.each do |stats|
-        temp = temp + stats[:age].to_i
+        temp = temp + stats[:age].to_5
+        count+= 1
+      end
+    end
+  end
+  (temp/count).ceil
 end
