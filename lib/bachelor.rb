@@ -11,7 +11,8 @@ def get_first_name_of_season_winner(data, season_num)
           end
      end
   end
-  puts temp
+   puts temp
+   temp
 end
 
 def get_contestant_name(data, occupation)
