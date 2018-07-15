@@ -2102,7 +2102,7 @@ def get_occupation(data, hometown)
   seasons.each do |num, person|
     person.each do |stats|
       if stats[:hometown] == hometown && temp == nil
-            temp = stats[:name].to_s
+            temp = stats[:occupation].to_s
         end
     end
   
