@@ -47,7 +47,11 @@ def get_occupation(data, hometown)
     peperson.each do |stats|
       if stats[:hometown] == hometown
         temp = stats[:name].to_s
-        
+      break
+    end
+  end
+end
+temp
 end
 
 def get_average_age_for_season(data, season)
